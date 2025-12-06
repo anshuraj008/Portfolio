@@ -10,53 +10,75 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div id="hero">
-            <nav>
-               <p class="logo">Anshu</p>
-               <ul id="sidemenu">
-               <li><a href="#hero">Home</a></li>
-               <li><a href="#about">About</a></li>
-               <li><a href="#skills">Skills</a></li> 
-               <li><a href="#services">Services</a></li>
-               <li><a href="#projects">Projects</a></li>
-               <li><a href="#contact">Contact</a></li>
-               <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-               </ul>
-               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-    </div>        
+    <header class="hero" id="hero">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <nav class="nav">
+            <p class="logo">PortFolio</p>
+            <ul id="sidemenu" class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
 
-    <!--home section-->
-    <div class="image">
-        <img src="pic1.png">
-    </div>
-    <div id="detail">
-        <h1>Hey, I'm <span>Anshu Raj</span></h1>
-        <p>This is my official websiteto show all my work and details <br> Experience of Web Development</p>
-        <a href="#" class="btn0">Resume</a>
-        <a href="#" class="btn0">Hire Me!</a>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/anshu-raj-824b7a2b7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bz74SRQk4SpCYt7yIJLg9Eg%3D%3D"><i class='bx bxl-linkedin' ></i></a>
-            <a href="https://github.com/0888888888"><i class='bx bxl-github' ></i></a>
-            <a href="https://x.com/AnshuRaj0088"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://www.instagram.com/_anshu_raj08/?hl=en#"><i class='bx bxl-instagram' ></i></a>
-        </div>
-    </div>
-
-    <!--about section-->
-<div id="about">
-    <div class="container1">
-        <div class="row">
-            <div class="about-col-1">
-                <h1 class="sub-tittle">About me</h1><br>
-                <p><span style="font-size: 20px; font-weight: bold; color: #fff">Hey there!<br></span><br>
-                    I'm Anshu Raj, from Dumka Jharkhand. Currently I am pursuing B.Tech in Computer Science.<br>
-                    My tech journey has been dynamic and i have divided into programming languages like c and java, and i'm currently deep knowlwdge into Data Structure and Algorithms in java
-                    Alongside, i'm sharpening my skills in web development, mastering frontend technologies and gradually venturing into the backend with the MERN stack.<br> 
-                    Let's connect, collaborate, and create some digital magic together!</p><br>
-                    <a href="#" class="btn0">More About me</a>
+        <div class="hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">Portfolio · 2025</p>
+                <h1>Hey, I'm <span>Tushar Pal</span></h1>
+                <p class="lede">This is my official website to showcase my work, projects, and passion for crafting delightful web experiences.</p>
+                <div class="cta-row">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn ghost">Hire Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/anshu-raj-824b7a2b7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bz74SRQk4SpCYt7yIJLg9Eg%3D%3D"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/0888888888"><i class='bx bxl-github'></i></a>
+                    <a href="https://x.com/AnshuRaj0088"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/_anshu_raj08/?hl=en#"><i class='bx bxl-instagram'></i></a>
+                </div>
             </div>
-            <div class="about-col-2">
+            <div class="hero-visual">
+                <div class="glass-card">
+                    <img src="tushar.jpg" alt="Tushar Pal portrait">
+                    <div class="pill">Web Developer · MERN · UI/UX</div>
+                </div>
+                <div class="stats">
+                    <div>
+                        <p class="stat-number">10+</p>
+                        <p class="stat-label">Projects</p>
+                    </div>
+                    <div>
+                        <p class="stat-number">2+</p>
+                        <p class="stat-label">Years learning</p>
+                    </div>
+                    <div>
+                        <p class="stat-number">3</p>
+                        <p class="stat-label">Core stacks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="section-header">
+                <p class="eyebrow">About</p>
+                <h2>About me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="intro">Hey there! I'm Anshu Raj from Dumka, Jharkhand, currently pursuing B.Tech in Computer Science.</p>
+                    <p>My tech journey is dynamic—I work with C, Java, and Python while deepening my knowledge in Data Structures and Algorithms with Java. I'm sharpening my frontend skills and gradually venturing into the backend with the MERN stack. Let's connect, collaborate, and create digital magic together!</p>
+                    <a href="#contact" class="btn primary">Let’s collaborate</a>
+                </div>
+                <div class="about-tabs">
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -64,198 +86,162 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Web Development</span><br>HTML, CSS, JS, REACT</li>
-                            <li><span>languages</span><br>C, JAVA, PYTHON</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, React</li>
+                            <li><span>Languages</span><br>C, Java, Python</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Aug 2024 - Oct 2024</span><br>MERN Stack Development from Ardent Collaborations</li>
-                            <li><span>2024-2024</span><br>Internship</li>
+                            <li><span>Aug 2024 - Oct 2024</span><br>MERN Stack Development · Ardent Collaborations</li>
+                            <li><span>2024</span><br>Internship</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2022 - 2026</span><br>NSHM knowledge campus, Durgapur</li>
+                            <li><span>2022 - 2026</span><br>NSHM Knowledge Campus, Durgapur</li>
                             <li><span>2018 - 2022</span><br>MG Inter College Ranishwar</li>
                         </ul>
                     </div>
-            </div>
-        </div>
-    </div>    
-</div>
-
-
-<!--------------skills------------------->
-<section id="skills">
-    <h1 class="sub">Skills</h1><br>
-    <div class="skills">
-        <div class="skills-icons">
-            <div class="card">
-                <img src="c.png" alt="C" width="110">
-            </div>
-
-            <div class="card">
-                <img src="html.png" alt="HTML" width="100">
-            </div>
-
-            <div class="card">
-                <img src="css.png" alt="CSS" width="100">
-            </div>
-
-            <div class="card">
-                <img src="js.png" alt="JavaScript" width="110">
-            </div>
-
-            <div class="card">
-                <img src="react.png" alt="React" width="110">
-            </div>
-
-            <div class="card">
-                <img src="java.png" alt="Java" width="110">
-            </div>
-           
-            <div class="card">
-                <img src="python.png" alt="Python" width="110">
-            </div>
-
-            <div class="card">
-                <img src="vscode.png" alt="Vs code" width="110">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!------------services---------->
-<div id="services">
-    <div class="container2">
-        <h1 class="sub-tittle">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Frontend Developer</h2>
-                <p>Frontend development involves creating the user interface and user experience for websites and web applications.
-                   Languages: HTML, CSS, JavaScript.<br>Frameworks and Libraries: React, Angular, Bootstrap.<br>Tools: Webpack, Babel, NPM/Yarn.
-                </p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>Backend Developer</h2>
-                <p>Backend development focuses on server-side logic, databases, and application integration.<br>Languages: JavaScript (Node.js), Python, Java, Ruby, PHP, C#. <br>
-                    Frameworks and Libraries: Express.js, Django, Flask, Spring.<br> Databases: MySQL, PostgreSQL, SQLite Prototyping Tools:</p>
-                <a href="#">Learn more</a>  
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>UI/UX Designer</h2>
-                <p>UI/UX design focuses on creating user-friendly, aesthetically pleasing iLnterfaces and ensuring a positive user experience. <br>UI Design: Visual Design, Design Systems and Style Guides, Prototyping Tools.<br>
-                    UX Design: User Research, Information Architecture, Interaction Design, Usability Testing, Accessibility, 
-                   </p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--------------portfolio----------------->
-<div id="projects">
-    <div class="container">
-        <h1 sub-title>Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="drawing.jpg">
-                <div class="layer">
-                    <h3>Potrait Design </h3>
-                    <p>This website show the amazing potrait design in the world.
-                        Download it from website page.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
-            <div class="work">
-                <img src="coffee1.jpg">
-                <div class="layer">
-                    <h3>Coffee </h3>
-                    <p>This website show the amazing coffee product in the world.
-                        Download it from website page.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-header">
+                <p class="eyebrow">Toolkit</p>
+                <h2>Skills</h2>
+            </div>
+            <div class="card-grid skills-grid">
+                <div class="card"><img src="c.png" alt="C"><p>C</p></div>
+                <div class="card"><img src="html.png" alt="HTML"><p>HTML</p></div>
+                <div class="card"><img src="css.png" alt="CSS"><p>CSS</p></div>
+                <div class="card"><img src="js.png" alt="JavaScript"><p>JavaScript</p></div>
+                <div class="card"><img src="react.png" alt="React"><p>React</p></div>
+                <div class="card"><img src="java.png" alt="Java"><p>Java</p></div>
+                <div class="card"><img src="python.png" alt="Python"><p>Python</p></div>
+                <div class="card"><img src="vscode.png" alt="VS Code"><p>VS Code</p></div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="section-header">
+                <p class="eyebrow">Services</p>
+                <h2>What I do</h2>
+            </div>
+            <div class="card-grid services-grid">
+                <div class="card service-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Modern, responsive interfaces built with HTML, CSS, JavaScript, and React. I design clean layouts that feel fast and intuitive.</p>
+                    <a href="#projects">See work</a>
+                </div>
+                <div class="card service-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Backend Curious</h3>
+                    <p>Building foundational skills with Node.js, Express, and MongoDB—crafting APIs and connecting data to experiences.</p>
+                    <a href="#contact">Collaborate</a>
+                </div>
+                <div class="card service-card">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>UI/UX Thinking</h3>
+                    <p>Human-centered design, accessibility, and thoughtful motion to turn ideas into memorable, usable products.</p>
+                    <a href="#contact">Start a project</a>
                 </div>
             </div>
-            <div class="work">
-                <img src="amazon1.jpg">
-                <div class="layer">
-                    <h3>Amazon</h3>
-                    <p>This website show the amazing amazon website in the world.
-                        Download it from website page.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-header">
+                <p class="eyebrow">Work</p>
+                <h2>Projects</h2>
+            </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="drawing.jpg" alt="Portrait design">
+                    <div class="layer">
+                        <h3>Portrait Design</h3>
+                        <p>A curated gallery of detailed portrait artwork with smooth interactions.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="coffee1.jpg" alt="Coffee brand">
+                    <div class="layer">
+                        <h3>Coffee Brand</h3>
+                        <p>A landing experience for a coffee brand highlighting aroma, craft, and community.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="amazon1.jpg" alt="Amazon redesign">
+                    <div class="layer">
+                        <h3>Amazon Concept</h3>
+                        <p>An interface concept focusing on speed, clarity, and personalized cards.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
+            <a href="#contact" class="btn primary center">Let’s build something</a>
+        </section>
 
-<!-----------------------contact--------------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title"> Contact me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>anshuraj9905151156@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>9905151156</p> 
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/anshu-raj-824b7a2b7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bz74SRQk4SpCYt7yIJLg9Eg%3D%3D"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://github.com/0888888888"><i class='bx bxl-github' ></i></a>
-                    <a href="https://x.com/AnshuRaj0088"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://www.instagram.com/_anshu_raj08/?hl=en#"><i class='bx bxl-instagram' ></i></a>
-                    <!-- <a href="#"><i class='bx bxl-facebook' ></i></a> -->
-                </div> 
-                <a href="#" download class="btn btn2">Resume</a> 
+        <section id="contact" class="section contact">
+            <div class="section-header">
+                <p class="eyebrow">Contact</p>
+                <h2>Let’s talk</h2>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2 ">submit</button>
-                </form>
-                <!-- <span id="msg">hello</span> -->
+            <div class="row contact-grid">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i> anshuraj9905151156@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9905151156</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/anshu-raj-824b7a2b7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bz74SRQk4SpCYt7yIJLg9Eg%3D%3D"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/0888888888"><i class='bx bxl-github'></i></a>
+                        <a href="https://x.com/AnshuRaj0088"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/_anshu_raj08/?hl=en#"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                    <a href="#" download class="btn ghost">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn primary">Submit</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="copyright">
-    <p>Copyright Anshu. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
-</div>
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+        </section>
+    </main>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
+    <footer class="copyright">
+        <p>Copyright Anshu · Made with <i class="fa-solid fa-heart"></i></p>
+    </footer>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right ="-150px";
-    }
-</script>
+        function closemenu(){
+            sidemenu.style.right = "-220px";
+        }
+    </script>
 </body>
 </html>
